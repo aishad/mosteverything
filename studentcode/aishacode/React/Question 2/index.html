@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script>
+        class button extends React.Component {
+            constructor() {
+                super();
+                this.state = { message: "hello"};
+            }
+            render(){
+                return React.createElement("button", {onClick: ()=>
+                this.setState({ message: "nevermind"})}, 
+                this.state.message)
+            }
+
+
+            // render(){
+            //     if (clicked) {
+            //     return React.createElement("button",{onClick: () => {                
+            //     this.setState({clicked: !this.state.clicked});
+
+            //     this.setState({message:"hello"})}}, this.state.message)
+            // }
+            //     return React.createElement("button", { onClick: () => 
+            //     this.setState({ message: "nevermind" }) }, this.state.message);
+
+            // }
+        }
+
+        var rootdiv = document.getElementById('root');
+        ReactDOM.render(React.createElement(button, null), rootdiv);
+    </script>
+</body>
+
+</html>

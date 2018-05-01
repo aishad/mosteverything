@@ -1,0 +1,21 @@
+
+button{
+    
+    position:absolute; 
+    top:308px;
+    left:250px; 
+     display: inline-block;
+        padding: 20px 38px;
+        font-size: 30px;
+        font-family: "Courier New", Courier, monospace;	
+        border-radius: 4px;        
+        background-color:#cce0ff;
+        color: #001433;  
+
+
+}
+
+body{
+    background: url("images/startbg.png");
+    background-repeat: no-repeat;
+}

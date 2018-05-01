@@ -1,0 +1,28 @@
+
+.container{
+    display:flex;
+}
+
+  .col{
+    border-style: dashed; 
+    margin:20px;
+    padding:10px;
+    text-align: center;
+  }
+
+  
+
+  }
+  .section {
+    margin: 100px;
+
+}
+
+
+  .smol{
+    height:100px;
+    padding:5px;
+  }
+   .image{  
+    display:flex;
+    }

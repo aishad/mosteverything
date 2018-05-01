@@ -1,0 +1,35 @@
+For each of the following expressions:
+ - Does it have a syntax error?
+ - If it doesn't have a syntax error, what are the probable input and output types of the function?
+
+a) x => x + 1
+i is number
+o is undefined
+
+b) x, y => x * y
+(x, y) => x*y
+
+c) x => { x * 2 }
+i is number
+o undefined
+
+d) (x, z) => {console.log(z); return x * z}
+no syntax error. 
+input number
+output number
+
+e) x => console.log(z); return x * z
+ should have curly brackets 
+ x => { console.log(z); return x*z}
+
+f) (x) => x * 2
+No syntax error
+i is number
+output undefined
+
+e) () => console.log("hello")
+input is undefined
+output is undefined
+
+
+When you're done, check all your answers in the developer console.

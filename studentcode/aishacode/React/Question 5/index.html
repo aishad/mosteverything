@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script>
+
+   let quote = [ 
+       "never give up",
+       "you can do it",
+       "you are beautiful",
+       "yolo",
+       "yup"
+       ]
+
+        class button extends React.Component {
+            constructor(){
+                super();
+                this.state= {
+                }
+            }
+            
+            render(){
+
+                return React.createElement("div", null, React.createElement("button", { 
+                    onClick: () => 
+                    this.setState({quote: quote[Math.floor(Math.random() * 5) + 0 ]})}, "Click for a quote!"), 
+
+                this.state.quote)
+
+            }
+
+}
+
+        var rootdiv = document.getElementById('root');
+        ReactDOM.render(React.createElement(button, null), rootdiv);
+    </script>
+</body>
+
+</html>

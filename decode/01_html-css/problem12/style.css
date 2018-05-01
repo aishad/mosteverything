@@ -1,0 +1,23 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+.container {
+    display: flex;
+    text-align: center;
+}
+
+.smol {
+    height:200px;
+}
+
+.col {
+border-style: dashed;
+margin: 5px;
+padding:10px;   
+font-size: 25px;
+}
+

@@ -1,0 +1,35 @@
+Someone has given you a function called map
+You don't know what it does, but there are clues at the bottom of this file
+Use these clues to describe what map is.
+Specifically:
+ - How many parameters does it have
+ 1
+ - What are the types of the parameters
+ an array
+ - What does it do?
+ filters elements in an array and makes them upper/lower case or double/triples them. 
+
+var someNumbers = [1, 2, 3, 4];
+var someStrings = ["bob", "ERIC"];
+
+function toUpperCase(x) {
+    return x.toUpperCase();
+}
+
+function toLowerCase(x) {
+    return x.toLowerCase();
+}
+
+function double(x) {
+    return x * 2;
+}
+
+function triple(x) {
+    return x * 3;
+}
+
+map(someNumbers, double) => [2, 4, 6, 8]
+map(someNumbers, triple) => [3, 6, 9, 12]
+
+map(someStrings, toUpperCase) => ["BOB", "ERIC"]
+map(someStrings, toLowerCase) => ["bob", "eric"]

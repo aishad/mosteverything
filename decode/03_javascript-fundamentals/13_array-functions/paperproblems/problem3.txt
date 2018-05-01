@@ -1,0 +1,17 @@
+var animals = [
+    {species: 'dog', name: 'Nacho'},
+    {species: 'cat', name: 'Ramses'},
+    {species: 'bunny',name: 'Flufftail'},
+    {species: 'dog', name: 'Popcorn'},
+    {species: 'giraffe', name: 'Neckbeard'},
+    {species: 'possum', name: ''}
+];
+
+var animalNames = animals.map(
+                    function(animal) {return animal.name});
+
+console.log(animalNames.join());
+
+ANSWER
+
+"Nacho, Ramses, Fulfftail, Popcorn, Neckbeard, "

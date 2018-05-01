@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script>
+        class button extends React.Component {
+            constructor(){
+                super();
+                this.state= {
+                }
+            }
+            
+            render(){
+                return React.createElement("div", null, React.createElement("button",
+                {onClick: ()=> 
+                this.setState ({number: Math.random()})}, "Click me to generate random number")
+                ,this.state.number)
+            }
+
+}
+
+        var rootdiv = document.getElementById('root');
+        ReactDOM.render(React.createElement(button, null), rootdiv);
+    </script>
+</body>
+
+</html>
