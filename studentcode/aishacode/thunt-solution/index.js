@@ -1,4 +1,4 @@
-var fetch = require('node-fetch')
+ var fetch = require('node-fetch')
 fetch('http://localhost:3000')
 .then(x => x.text())
 .then(y => console.log(y))
