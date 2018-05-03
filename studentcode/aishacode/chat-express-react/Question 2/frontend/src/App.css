@@ -1,28 +1,21 @@
-.App {
-  text-align: center;
+.chat {
+  border: 1px solid #999;
+  display: inline-block;
+  vertical-align: bottom;
+  position: relative;
+  margin: 0 5px;
+  pointer-events: auto;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.topcontainer {
+  position: fixed;
+  bottom: 250px;
+  left: 0;
+  pointer-events: none;
 }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.botcontainer {
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+  pointer-events: none;
 }

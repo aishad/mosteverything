@@ -8,7 +8,7 @@ class App extends Component {
     this.state = {
       username: "",
       inputValue: "",
-      messages: [{username : "ASD",contents:"FGDFS"}],
+      messages: [],
       nickname: false
     }
   }
